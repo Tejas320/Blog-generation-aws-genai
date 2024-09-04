@@ -33,6 +33,17 @@ AWS CLI configured with your credentials.
 
 Basic knowledge of Python programming language.
 
-## Steps
+## Important steps
 
-1. 
+1. Created a new function `awsappbedrock` in AWS Lambda with Python 3.12 as runtime.
+2. Created a new virtual environment (venv) in VS Code with Python version 3.12 and activated it.
+3. Created a new file `app.py` writing the lambda function code using Llama 3 8B Instruct model.
+   ### Note: Please refer `app.py` file provided above for detailed code.
+4. Copy paste the code from VS Code to  Code Source in AWS Lambda and deploy it.
+5. Whenever we open a lambda function, by default it uses an older version of `boto3` installled. To resolve this, we need to update packages.
+6. Created a new folder in VS Code with `boto3` library installed in it. Run this command in the terminal.
+   ```bash
+   pip install boto3 -t python/
+   ```
+7. Once this folder is created, make a zip file of this folder.
+   ### Note: 
