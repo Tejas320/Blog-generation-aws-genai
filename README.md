@@ -46,4 +46,20 @@ Basic knowledge of Python programming language.
    pip install boto3 -t python/
    ```
 7. Once this folder is created, make a zip file of this folder.
-   ### Note: 
+   ### Note: You can directly refer `boto3layer.zip` file provided above. But in case if you want to add more libraries, you can follow above steps.
+8. Created a new layer `boto3updatedlayer` by uploading the zip file created above and choosing Python 3.12, Python 3.11, Python 3.10 as runtimes.
+9. Added this layer in our function `awsappbedrock`.
+    ![image](https://github.com/user-attachments/assets/fce3d3da-f560-41af-90fd-2adc07cba8fc)
+
+11. Created a new HTTP API `bedrockapi` and created a route `blog-generation` POST request type in API Gateway and attached our lambda function to it.
+12. Created a new stage `dev` and deployed our API in this stage.
+13. Created a new s3 bucket `awsbedrockbucketv1`.
+14. Attached a new policy `AdministratorAccess` to our role in Identity and Access Management (IAM).
+15. Created a new request in POSTMAN app with our dev invoke url and mentioning the topic in which blog will be generated in Body.
+    ```bash
+    {
+       "blog_topic:"#Your topic"
+    }
+    ```
+    `Blog generation is completed` message should be shown in POSTMAN app.
+16. You can see the blog generated in CloudWatch log streams or you can download the text file from s3 bucket.
