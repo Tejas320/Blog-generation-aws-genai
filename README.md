@@ -5,6 +5,7 @@ This project leverages AWS Lambda and AWS Bedrock to create a serverless blog ge
 
 ## Architecture
 The project follows a serverless architecture:
+![image](https://github.com/user-attachments/assets/2f4dc5fb-f201-4ae6-8a05-ec59082c8328)
 
 AWS Lambda: Handles the orchestration of the blog generation process, invoking AI models, and managing data flow.
 
@@ -30,4 +31,8 @@ An AWS account with permissions to create and manage Lambda functions, API Gatew
 
 AWS CLI configured with your credentials.
 
-Basic knowledge of Python (or the language used in your Lambda functions).
+Basic knowledge of Python programming language.
+
+## Steps
+
+1. 
