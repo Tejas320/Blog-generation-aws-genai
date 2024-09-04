@@ -40,7 +40,7 @@ Basic knowledge of Python programming language.
 3. Created a new file `app.py` writing the lambda function code using Llama 3 8B Instruct model.
    ### Note: Please refer `app.py` file provided above for detailed code.
 4. Copy paste the code from VS Code to  Code Source in AWS Lambda and deploy it.
-5. Whenever we open a lambda function, by default it uses an older version of `boto3` installled. To resolve this, we need to update packages.
+5. Whenever we open a lambda function, by default it uses an older version of `boto3` installed. To resolve this, we need to update packages.
 6. Created a new folder in VS Code with `boto3` library installed in it. Run this command in the terminal.
    ```bash
    pip install boto3 -t python/
