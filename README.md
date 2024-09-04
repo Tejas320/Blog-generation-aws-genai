@@ -13,7 +13,7 @@ AWS Bedrock: Provides the AI models used for generating blog content, including 
 
 S3: Stores the generated blog content and related assets.
 
-API Gateway: (Optional) Exposes a RESTful API to trigger the blog generation process.
+API Gateway: Exposes a RESTful API to trigger the blog generation process.
 
 ## Features
 Serverless: Fully managed by AWS, with no server maintenance required.
@@ -63,3 +63,4 @@ Basic knowledge of Python programming language.
     ```
     `Blog generation is completed` message should be shown in POSTMAN app.
 16. You can see the blog generated in CloudWatch log streams or you can download the text file from s3 bucket.
+![image](https://github.com/user-attachments/assets/259acb52-f68a-4174-bd8e-1ad6de69a35b)
