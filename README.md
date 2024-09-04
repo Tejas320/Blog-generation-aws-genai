@@ -1,4 +1,4 @@
-# Blog generation using AWS Lambda and AWS BedRock
+# Blog generation using AWS Lambda and AWS Bedrock
 
 ## Overview
 This project leverages AWS Lambda and AWS Bedrock to create a serverless blog generation pipeline. The system automates content creation using advanced AI models hosted on AWS Bedrock, triggered by AWS Lambda functions. It's designed to efficiently generate high-quality blog content without the need for managing servers or infrastructure.
